@@ -140,13 +140,15 @@ public void draw() {
             float mutar=random(1);
             //print(error[sel+1][t]+" ");
             if(mutar<abs(error[sel][t])){
-              float aleatorio = random(min(0,1.5*error[sel][t]),max(0,1.5*error[sel][t]));
+              //float aleatorio = random(min(0,1.5*error[sel][t]),max(0,1.5*error[sel][t]));
+              float aleatorio = random(-0.5,0.5);
               if(t>=90 && t<95){
                // print(t+"G: "+cromosomas_cruzados[i][t]+"+");
                 pru[0]=i;
                 pru[1]=t;
               }
-              cromosomas_cruzados[i][t]=cromosomas_cruzados[i][t]+aleatorio;
+              //cromosomas_cruzados[i][t]=cromosomas_cruzados[i][t]+aleatorio;
+              cromosomas_cruzados[i][t]=aleatorio;
               if(t>=90 && t<95){
                // print(aleatorio+"="+cromosomas_cruzados[i][t]+"  ");
               }
